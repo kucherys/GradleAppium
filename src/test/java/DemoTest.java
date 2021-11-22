@@ -22,8 +22,8 @@ public class DemoTest extends Capabilities {
     public void verify_launching_page() {
         launchPage = new LaunchPage(driver);
         launchPage.verifyLogo();
-        System.out.println(launchPage.getWelcomeTitle());
         Assert.assertEquals(launchPage.getWelcomeTitle(),"Welcome to");
+        System.out.println("Title = " + launchPage.getWelcomeTitle());
 
     }
 
