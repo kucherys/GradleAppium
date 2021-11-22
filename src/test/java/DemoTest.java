@@ -1,4 +1,5 @@
 import capabilities.Capabilities;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -21,6 +22,7 @@ public class DemoTest extends Capabilities {
         launchPage = new LaunchPage(driver);
         launchPage.verifyLogo();
         System.out.println(launchPage.getWelcomeTitle());
+        Assert.assertEquals(launchPage.getWelcomeTitle(),"Welcome to");
 
     }
 
