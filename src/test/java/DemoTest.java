@@ -13,7 +13,7 @@ public class DemoTest extends Capabilities {
 
     @BeforeClass
     public void setUp() throws IOException, InterruptedException {
-        service = startServer();
+//        service = startServer();
         driver = capabilities("digibank-0.0.6-debug.apk");
     }
 
@@ -29,8 +29,8 @@ public class DemoTest extends Capabilities {
     @AfterTest
     public void tearDown()
     {
-        driver.quit();
-        service.stop();
+//        driver.quit();
+//        service.stop();
         System.out.println("Appium server stopped");
 
     }
