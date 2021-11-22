@@ -30,7 +30,7 @@ public class DemoTest extends Capabilities {
     public void tearDown()
     {
 //        driver.quit();
-//        service.stop();
+        service.stop();
         System.out.println("Appium server stopped");
 
     }
