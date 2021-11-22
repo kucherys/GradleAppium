@@ -1,4 +1,5 @@
 import capabilities.Capabilities;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,7 +13,8 @@ public class DemoTest extends Capabilities {
 
     @BeforeClass
     public void setUp() throws IOException, InterruptedException {
-        service = startServer();
+//        service = startServer();
+        service.stop();
         driver = capabilities("digibank-0.0.6-debug.apk");
     }
 
@@ -27,7 +29,7 @@ public class DemoTest extends Capabilities {
     @AfterTest
     public void tearDown()
     {
-        driver.quit();
+//        driver.quit();
         service.stop();
         System.out.println("Appium server stopped");
 
