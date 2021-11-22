@@ -20,7 +20,7 @@ public class DemoTest extends Capabilities {
     public void verify_launching_page() {
         launchPage = new LaunchPage(driver);
         launchPage.verifyLogo();
-        System.out.println(launchPage.getWelcomeTitle());
+        System.out.println("NEW LOGO: " + launchPage.getWelcomeTitle());
 
     }
 
