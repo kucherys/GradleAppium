@@ -14,6 +14,7 @@ public class DemoTest extends Capabilities {
     @BeforeClass
     public void setUp() throws IOException, InterruptedException {
 //        service = startServer();
+        service.stop();
         driver = capabilities("digibank-0.0.6-debug.apk");
     }
 
