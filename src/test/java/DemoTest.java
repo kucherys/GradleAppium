@@ -23,6 +23,7 @@ public class DemoTest extends Capabilities {
         launchPage = new LaunchPage(driver);
         launchPage.verifyLogo();
         System.out.println("NEW LOGO: " + launchPage.getWelcomeTitle());
+        System.out.println("TEST PASSED");
 
     }
 
